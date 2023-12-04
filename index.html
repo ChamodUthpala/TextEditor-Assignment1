@@ -13,7 +13,7 @@
     <title>Text Editor - CT/2019/050 </title>
 </head>
 
-<body>
+<body onload="setColor()">
 
     <div class="toolbar bg-dark">
         <div class="container">
@@ -26,8 +26,9 @@
             <button class="I" onclick="toItalic()">
                 <img src="/Resources/italic-xxl.png" width=25px>
             </button>
-            <button class="color">
+            <button class="color" onclick="changeFontColor()">
                 <img src="/Resources/Text_color.png" width=21px>
+                <input type="color" id="fontColorPicker" value="#000000">
             </button>
             <button class="L">
                 <img src="/Resources/left.png" width=25px>
