@@ -4,3 +4,12 @@ button{
     height: 50px;
     margin-right: 1%;
 }
+
+button:hover{
+    background-color: rgb(126, 180, 119);
+}
+
+.toolbar{
+    display: flex;
+    text-align: center;
+}
