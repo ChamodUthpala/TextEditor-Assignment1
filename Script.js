@@ -47,9 +47,16 @@ function Left() {
     var editableDiv = document.getElementById("textArea");
     editableDiv.style.textAlign = "left";
   }
-//Right
+//Center
 function Center() {
 
     var editableDiv = document.getElementById("textArea");
     editableDiv.style.textAlign = "Center";
+}
+
+//Right
+function Right() {
+    
+    var editableDiv = document.getElementById("textArea");
+    editableDiv.style.textAlign = "right";
 }
