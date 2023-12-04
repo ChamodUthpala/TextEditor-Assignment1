@@ -67,3 +67,33 @@ function Justify() {
     var editableDiv = document.getElementById("textArea");
     editableDiv.style.textAlign = "Justify";
 }
+
+//Function to Undo & Redo
+var undoStack = [];
+var redoStack = [];
+
+// Function to save the current state
+function saveState() {
+  undoStack.push(textArea.innerHTML);
+  redoStack = [];
+}
+
+//Undo
+function Undo() {
+
+    if (undoStack.length > 1) {
+      redoStack.push(undoStack.pop());
+      textArea.innerHTML = undoStack[undoStack.length - 1];
+    }
+}
+//Redo
+function Redo() {
+    
+    if (redoStack.length > 0) {
+      undoStack.push(redoStack.pop());
+      textArea.innerHTML = undoStack[undoStack.length - 1];
+    }
+}
+
+//EventListner
+textArea.addEventListener("input", saveState);
