@@ -60,3 +60,10 @@ function Right() {
     var editableDiv = document.getElementById("textArea");
     editableDiv.style.textAlign = "right";
 }
+
+//Justify
+function Justify() {
+    
+    var editableDiv = document.getElementById("textArea");
+    editableDiv.style.textAlign = "Justify";
+}
