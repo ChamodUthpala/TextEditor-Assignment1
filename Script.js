@@ -37,3 +37,13 @@ function changeFontColor() {
   function setColor(){
     fontColorPicker.value = "#ff0000";
   }
+
+
+//Functions to set Text Alignments 
+
+//Left
+function Left() {
+    
+    var editableDiv = document.getElementById("txtEditor");
+    editableDiv.style.textAlign = "left";
+  }     
