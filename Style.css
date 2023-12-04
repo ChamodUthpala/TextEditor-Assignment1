@@ -13,3 +13,12 @@ button:hover{
     display: flex;
     text-align: center;
 }
+
+#textArea{
+    border: 1px solid black;
+    height: 400px;
+    max-width: 1200px;
+    margin: 5px auto;
+    padding: 5px;
+    font-size: 18px;
+}
