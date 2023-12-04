@@ -32,8 +32,38 @@ function changeFontColor() {
         range.surroundContents(span);
       }
     }
-  }
+}
 
-  function setColor(){
+function setColor(){
     fontColorPicker.value = "#ff0000";
+}
+
+
+//Functions to set Text Alignments 
+
+//Left
+function Left() {
+    
+    var editableDiv = document.getElementById("textArea");
+    editableDiv.style.textAlign = "left";
   }
+//Center
+function Center() {
+
+    var editableDiv = document.getElementById("textArea");
+    editableDiv.style.textAlign = "Center";
+}
+
+//Right
+function Right() {
+    
+    var editableDiv = document.getElementById("textArea");
+    editableDiv.style.textAlign = "right";
+}
+
+//Justify
+function Justify() {
+    
+    var editableDiv = document.getElementById("textArea");
+    editableDiv.style.textAlign = "Justify";
+}
