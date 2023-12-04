@@ -7,3 +7,8 @@ function toBold(){
 function toUnderline(){
     document.execCommand('underline', true, null);
 }
+
+//function to set Italic
+function toItalic(){
+    document.execCommand('italic', true, null);
+}
